@@ -20,18 +20,19 @@ http.createServer((req, res) => {
 
     switch(url){
         case "/home":
-            renderHTML("./home.html", res);
+            renderHTML("./index.html", res);
             break;
         case "/about":
             renderHTML("./about.html", res);
+            break;
+        case "/forum":
+            renderHTML("./forum.html", res);
             break;
         default:
             renderHTML("./error.html", res)
             break;       
     }
-}).listen(3000, () => {
-    console.log("Server is Running on 3000")
-})
+}).listen(3000)
 
 
 
