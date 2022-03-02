@@ -35,7 +35,7 @@ http.createServer((req, res) => {
             renderHTML("/page5", res);
             break;
         default:
-            renderHTML("./home.html", res)
+            renderHTML("./error.html", res)
             break;       
     }
 }).listen(3000, () => {
