@@ -25,11 +25,11 @@ http.createServer((req, res) => {
         case "/info": 
             renderHTML("./info.html", res);
             break;
-        case "/page3":
-            renderHTML("/page3", res);
+        case "/registrasi":
+            renderHTML("./registrasi.html", res);
             break;
-        case "/page4":
-            renderHTML("/page4", res);
+        case "/about":
+            renderHTML("./about.html", res);
             break;
         case "/page5":
             renderHTML("/page5", res);
