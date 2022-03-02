@@ -1,1 +1,16 @@
+<<<<<<< HEAD
  
+=======
+.custom-1 {
+    width: 50%;
+    height: auto;
+    color: black;
+    font-family: Poppins;
+    font-weight: bold;
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+>>>>>>> 17f87c40de3501d8bb15a056b23ea4ecefd274fd
