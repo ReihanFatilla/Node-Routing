@@ -1,6 +1,10 @@
 <html lang="en">
 
 <head>
+    <!-- Connect to Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- link to font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:regular,medium,semibold,bold" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,19 +17,57 @@
         Apa Maksud?
     </div>
     <style>
+        /* Create a simple landing page */
         .custom-1 {
+            /* Make it as a box */
             width: fit-content;
-            height: auto;
-            color: black;
-            font-family: Poppins;
-            text-align: center;
-            font-weight: bold;
-            font-size: 30px;
-            background-color: #fff;
-            border: 2px solid black;
+            height: fit-content;
+            /* Center it */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* Make it as a box */
+            background-color: #f1f1f1;
             padding: 20px;
-            margin: auto;
-            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+            box-sizing: border-box;
+            /* Style the text */
+            text-align: center;
+            /* Use Poppins as a font family */
+            font-family: Poppins;
+            /* Style the text */
+            font-size: 20px;
+            font-weight: bold;
+            color: #2b2b2b;
+            /* Make a shadow */
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            animation: mymove2 1s;
+        }
+        /* when hovered, make it different background */
+        .custom-1:hover {
+            background-color: #e6e6e6;
+            /* bigger shadow */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 4px 10px 0 rgba(0, 0, 0, 0.12);
+            /* add an animation */
+            animation: mymove 1s;
+            animation-fill-mode: forwards;
+        }
+        /* animation */
+        @keyframes mymove {
+            from {
+                transform: translate(-50%, -50%) scale(1);
+            }
+            to {
+                transform: translate(-50%, -50%) scale(3);
+            }
+        }
+        @keyframes mymove2 {
+            from {
+                transform: translate(-50%, -50%) scale(3);
+            }
+            to {
+                transform: translate(-50%, -50%) scale(1);
+            }
         }
 
         body {
